@@ -2,6 +2,7 @@ var path = require('path')
 var config = require('../config')
 var utils = require('./utils')
 var projectRoot = path.resolve(__dirname, '../')
+var vueLoaderConfig = require('./vue-loader.conf')
 
 var env = process.env.NODE_ENV
 // check env & config/index.js to decide whether to enable CSS source maps for the
@@ -56,7 +57,8 @@ module.exports = {
     loaders: [
       {
         test: /\.vue$/,
-        loader: 'vue'
+        loader: 'vue',
+        options: vueLoaderConfig
       },
       {
         test: /\.js$/,

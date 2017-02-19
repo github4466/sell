@@ -81,6 +81,7 @@
 				favorite: (() => {
 					return loadFromLocal(this.seller.id, 'favorite', false)
 				})(),
+			//	favorite: false,
 				classMap: ['decrease', 'discount', 'guarantee', 'invoice', 'special']
 			}
 		},
