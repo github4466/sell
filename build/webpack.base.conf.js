@@ -2,7 +2,6 @@ var path = require('path')
 var config = require('../config')
 var utils = require('./utils')
 var projectRoot = path.resolve(__dirname, '../')
-var vueLoaderConfig = require('./vue-loader.conf')
 
 var env = process.env.NODE_ENV
 // check env & config/index.js to decide whether to enable CSS source maps for the
@@ -57,8 +56,7 @@ module.exports = {
     loaders: [
       {
         test: /\.vue$/,
-        loader: 'vue',
-        options: vueLoaderConfig
+        loader: 'vue'
       },
       {
         test: /\.js$/,
@@ -101,7 +99,7 @@ module.exports = {
     postcss: [
       require('autoprefixer')({
         // 自动添加前缀
-        browsers: ['last 2 versions']
+        browsers: ['last 20 versions', '> 1%', 'ie 8']
       })
     ]
   }
