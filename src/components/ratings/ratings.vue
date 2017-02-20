@@ -148,7 +148,7 @@
 				width: 137px;
 				text-align: center;
 				border-right: solid 1px rgba(7, 17, 27, 0.1);
-				@media only screen and (max-width: 320px) {
+				@media only screen and (max-width: 366px) {
 					flex: 0 0 120px;
 					width: 120px;
 				}
@@ -169,7 +169,7 @@
 			}
 			.right {
 				padding: 0 24px;
-				@media only screen and (max-width: 320px) {
+				@media only screen and (max-width: 366px) {
 					padding: 0 6px;
 				}
 				.service-score, .food-score, .delivery-time{
